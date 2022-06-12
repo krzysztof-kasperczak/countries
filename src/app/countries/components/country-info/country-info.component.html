@@ -1,0 +1,44 @@
+<div *ngIf="country" class="country-info row">
+    <div class="col-md-4 offset-md-4 country-info__box bg-light">
+        <div class="row align-items-center">
+            <div class="col-4">
+                <img [src]="country.flags.svg" />
+            </div>
+            <div class="col-8 text-center">
+                <h2 class="mb-0">{{ country.name.common }}</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-4">
+                Stolica:
+            </div>
+            <div class="col-8 text-center">
+                <span class="">{{ country.capital }}</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-4">
+                Waluta:
+            </div>
+            <div class="col-8 text-center">
+                <span class="">{{ country.currencies.name }}</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-4">
+                Populacja:
+            </div>
+            <div class="col-8 text-center">
+                <span class="">{{ country.population }}</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<ng-template #header>
+    <button class="btn btn-light" (click)="onBack()">Cofnij</button>
+</ng-template>

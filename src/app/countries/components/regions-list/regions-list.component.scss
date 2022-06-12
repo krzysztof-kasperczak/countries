@@ -1,0 +1,15 @@
+.regions-list {
+    &__box {
+        cursor: pointer;
+        padding: 1rem;
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+}

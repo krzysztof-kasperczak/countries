@@ -1,0 +1,14 @@
+.countries-list {
+    &__box {
+        cursor: pointer;
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+
+        img {
+            height: 2rem;
+        }
+
+        &:hover {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+        }
+    }
+}

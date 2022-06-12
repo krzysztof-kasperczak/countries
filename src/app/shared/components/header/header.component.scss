@@ -1,0 +1,19 @@
+.header {
+    background-color: #24292f;
+    color: white;
+    padding: 1rem;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__icon {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+        }
+    }
+
+
+}

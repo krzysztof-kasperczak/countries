@@ -1,0 +1,17 @@
+<header>
+    <!-- Fixed navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="header__container">
+                <div class="header__container__icon">
+                    <fa-icon [icon]="icon"></fa-icon>
+                    <h1 [style.margin-left.rem]="1" class="mb-0">Countries</h1>
+                </div>
+
+                <div *ngIf="service.template | async as template">
+                    <ng-container [ngTemplateOutlet]="template"></ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
